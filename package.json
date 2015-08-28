@@ -1,6 +1,6 @@
 {
   "name": "parse-abbrs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "To parse abbreviations from strings",
   "main": "index.js",
   "scripts": {
