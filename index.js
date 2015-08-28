@@ -15,15 +15,18 @@ module.exports = function(statement) {
             }
         };
 
+    if(matches){
+         //replace
+        matches.forEach(function(abbr){
+            pat=new RegExp('\\b'+ escapeRegExp(abbr) +'\\b','g');
+            parsed.string.out=parsed.string.out.replace(pat,abbreviations[abbr.toLowerCase()]);
+            parsed.string.annotated=parsed.string.annotated.replace(pat,'{ABBR: '+abbreviations[abbr.toLowerCase()]+'}');
+            parsed.abbrs.push(abbr)
+        });
+    
+    }
 
-    //replace
-    matches.forEach(function(abbr){
-        pat=new RegExp('\\b'+ escapeRegExp(abbr) +'\\b','g');
-        parsed.string.out=parsed.string.out.replace(pat,abbreviations[abbr.toLowerCase()]);
-        parsed.string.annotated=parsed.string.annotated.replace(pat,'{ABBR: '+abbreviations[abbr.toLowerCase()]+'}');
-        parsed.abbrs.push(abbr)
-    });
-
+   
 
     return parsed;
 };
