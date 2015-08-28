@@ -1,0 +1,25 @@
+{
+  "name": "parse-abbrs",
+  "version": "1.0.0",
+  "description": "To parse abbreviations from strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mugendi/parse-abbrs.git"
+  },
+  "keywords": [
+    "abbreviation",
+    "parse",
+    "nlp",
+    "string"
+  ],
+  "author": "Anthony Mugendi (ngurumugz@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugendi/parse-abbrs/issues"
+  },
+  "homepage": "https://github.com/mugendi/parse-abbrs"
+}
